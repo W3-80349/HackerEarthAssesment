@@ -25,7 +25,8 @@ const login = async (req, res) => {
     res.send({
         status:true,
         token:token,
-        userId:user._id
+        userId:user._id,
+        userType:user.type
     });
   } catch (err) {
     console.error(err);
